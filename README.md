@@ -1,16 +1,16 @@
-# __<font color="red">g</font><font color="orange">o</font><font color="yellow">c</font><font color="greenyellow">ol</font>__
+# gocol
 
-__<font color="dodgerblue">Go</font> <font color="red">C</font><font color="orange">o</font><font color="yellow">l</font><font color="greenyellow">or</font>__ your test coverage! ✨
+Go color your test coverage! ✨
 
 Turn this:
 
-![](./assets/gocol_1.png)
+<img alt="gocol 1" src="./assets/gocol_1.png" width="400px">
 
 into this!
 
-![](./assets/gocol_2.png)
+<img alt="gocol 2" src="./assets/gocol_2.png" width="400px">
 
-See immediately how weel your projects is covered!
+See immediately how much your projects is covered!
 
 ## Installation
 
@@ -28,14 +28,14 @@ go test -cover ./... | gocol
 
 If you are using the verbose `-v` then the `PASS|FAIL|SKIP` lines will be coloured as well.
 
-![](./assets/gocol_4.png)
+<img alt="gocol 4" src="./assets/gocol_4.png" width="400px">
 
 
 # Colors and ranges 🌈
 
 Currently only a fixed range of colors and percentage is available.
 
-![](./assets/gocol_3.png)
+<img alt="gocol 3" src="./assets/gocol_3.png" width="400px">
 
 # Feedback
 If you like the project please star it on Github 🌟, and feel free to drop me a note, or [open an issue](https://github.com/enrichman/gocol/issues/new)!
