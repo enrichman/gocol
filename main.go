@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"runtime/debug"
 	"strconv"
 	"strings"
 
@@ -122,9 +123,20 @@ func checkPipe() {
 
 	isPipe := (stat.Mode() & os.ModeCharDevice) == 0
 	if !isPipe {
-		fmt.Print("Gocol colorize your coverage\n\n")
-		fmt.Println("Usage:\n\tgo test -cover ./... | gocol")
-		return
+		help := `Gocol colorize your coverage
+Version: %s
+
+Usage:
+	go test -cover ./... | gocol
+`
+		version := "<unknown>"
+		if info, ok := debug.ReadBuildInfo(); ok {
+			if info.Main.Version != "" {
+				version = info.Main.Version
+			}
+		}
+		fmt.Printf(help, version)
+		os.Exit(0)
 	}
 }
 
