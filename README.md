@@ -2,7 +2,11 @@
 
 Go color your test coverage! ✨
 
-Turn this:
+```
+go test -cover ./... | gocol
+```
+
+`gocol` will turn this:
 
 <img alt="gocol 1" src="./assets/gocol_1.png" width="600px">
 
